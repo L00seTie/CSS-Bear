@@ -1,0 +1,227 @@
+body {
+    background-color: rgb(255, 237, 243);
+}
+
+/* BEAR HEAD */
+.head {
+    background-color: rgb(198, 114, 80);
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    border-radius: 5em;
+}
+.head::after {
+    content: "";
+    background-color: bisque;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 5em;
+    left: 3em;
+    border-radius: 5em;
+}
+.head::before {
+    content: "";
+    background-color: rgb(249, 126, 151);
+    width: 6em;
+    height: 5em;
+    position: absolute;
+    top: 6.4em;
+    left: 2em;
+    border-radius: 4em;
+    z-index: -1;
+}
+.ears {
+    background-color: rgb(198, 114, 80);
+    width: 4em;
+    height: 4em;
+    border-radius: 4em;
+    position: absolute;
+    top: 4.5em;
+    left: 4em;
+    box-shadow: 8em 0em rgb(198, 114, 80);
+}
+.ears::after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    background-color: bisque;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border-radius: 3em;
+    box-shadow: 8em 0em bisque;
+}
+.features {
+    width: 1em;
+    height: 1em;
+    background-color: rgb(86, 39, 39);
+    position: absolute;
+    top: 8.5em;
+    left: 7em;
+    border-radius: 1em;
+    box-shadow: 5em 0em rgb(86, 39, 39);
+}
+.features::after{
+    content: "";
+    width: 1em;
+    height: 1em;
+    background-color: rgb(86, 39, 39);
+    position: absolute;
+    top: 2em;
+    left: 2.5em;
+    border-radius: 1em;
+    z-index: 1;
+}
+.muzzle {
+    background-color: bisque;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 3em;
+    position: absolute;
+    top: 10.8em;
+    left: 8.5em;
+    border-bottom: 3px solid rgb(86, 39, 39);
+}
+.muzzle::after {
+    content: "";
+    background-color: bisque;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 3em;
+    position: absolute;
+    top: 0em;
+    left: 1.5em;
+    border-bottom: 3px solid black;
+}
+.blush {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgb(249, 126, 151);
+    position: absolute;
+    top: 10em;
+    left: 6em;
+    border-radius: 2em;
+    box-shadow: 6.5em 0em rgb(249, 126, 151);
+}
+.scarf {
+    width: 2em;
+    height: 4em;
+    background-color: rgb(249, 126, 151);
+    position: absolute;
+    top: 15em;
+    left: 10em;
+    border-radius: 0.7em;
+}
+
+/* BEAR BODY */
+.body {
+    width: 9em;
+    height: 12em;
+    background-color: rgb(198, 114, 80);
+    position: absolute;
+    top: 14em;
+    left: 5.5em;
+    border-radius: 7em 7em 5em 5em;
+    z-index: -2;
+}
+.body::after {
+    content: "";
+    width: 6em;
+    height: 8em;
+    background-color: bisque;
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    border-radius: 4em;
+}
+.legs {
+    background-color: rgb(198, 114, 80);
+    width: 3em;
+    height: 8em;
+    border-radius: 2em;
+    position: absolute;
+    top: 22em;
+    left: 5.5em;
+    z-index: -3;
+    box-shadow: 6em 0em rgb(198, 114, 80);
+}
+.left-arm {
+    background-color: rgb(198, 114, 80);
+    width: 3em;
+    height: 8em;
+    border-radius: 2em;
+    position: absolute;
+    top: 15em;
+    left: 3.5em;
+    rotate: 45deg;
+    z-index: -3;
+}
+.right-arm {
+    background-color: rgb(198, 114, 80);
+    width: 3em;
+    height: 8em;
+    border-radius: 2em;
+    position: absolute;
+    top: 13.5em;
+    left: 15em;
+    rotate: 100deg;
+    z-index: -3;
+}
+
+/* BALLOON */
+.balloon-string {
+    width: 0.5em;
+    height: 10em;
+    background-color: rgb(86, 39, 39);
+    position: absolute;
+    top: 7em;
+    left: 19em;
+    z-index: -4;
+}
+.balloon {
+    width: 6em;
+    height: 8em;
+    background-color: rgb(214, 45, 79);
+    position: absolute;
+    left: 16.5em;
+    top: 2em;
+    aspect-ratio: 3 / 4;
+    border-radius: 100% / 125% 125% 80% 80%;
+    rotate: 180deg;
+}
+.balloon::before {
+    content: "";
+    width: 2em;
+    height: 4em;
+    background-color: rgb(236, 90, 119);
+    position: absolute;
+    left: 1em;
+    top: 3em;
+    aspect-ratio: 3 / 4;
+    border-radius: 100% / 125% 125% 80% 80%;
+}
+.balloon-knot {
+    width: 0;
+    height: 0;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid rgb(214, 45, 79);
+    position: absolute;
+    left: 18.3em;
+    top: 9.6em;
+}
+
+/* SHADOW */
+.shadow {
+    width: 12em;
+    height: 4em;
+    background-color: rgba(86, 39, 39, 0.1);
+    position: absolute;
+    top: 28em;
+    left: 4em;
+    border-radius: 5em;
+    z-index: -10;
+}
